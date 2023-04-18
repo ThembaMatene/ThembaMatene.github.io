@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Themba Matene Portfolio</title>
+
+    <!--===== Font Awesome =====-->
+    <link rel="stylesheet" href="assets/fonts.css">
+
+    <!--====Icons====-->
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.4.0-web/css/all.min.css">
+    
+    <!--===== CSS =====-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!------** HEADER/Home **------->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="assets/TMLogo1.png" width="150" height="60" class="logo" >
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact"><span>Contact Me</span> </a></li>
+                    
+                    <i class="fas fa-solid fa-xmark" onclick="hidemenu()"></i>
+                </ul>
+                
+                <i class=" fas fa-solid fa-bars" onclick="showmenu()"></i>
+                
+            </nav>
+
+            <div class="header-text">
+                <p>Hello World,</p>
+                <h1> I'm <span>Themba Matene </span> </h1>
+                <p2>Welcome to my website portfolio. 
+                    <br>Here you will learn more about me, <br> Including my job experience 
+                and the skills </br>I posses as a <span>Software Developer.</span></p2>
+            </div>
+
+            <a class="btnDCV" href="assets/ThembaFullCV2023.pdf" target="_blank"  download> DOWNLOAD CV</a>
+        </div>
+    </div>
+    <!--============** Header/Home END **============-->
+
+       <!-----------** About **------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="About-image">
+                    <img src="assets/About.jpg"  alt="">
+                </div>
+                <div class="About-title">
+                    <h1 class="subtitle">About <span> Me</span></h1>
+                    <p class="about-info">Highly motivated and enthusiastic software developer with strong interpersonal skills and a passion for coding. 
+                        Possessing a basic understanding of coding principles and seeking to develop and expand technical expertise in software development. 
+                        With excellent communication skills and an ability to work collaboratively with team members. 
+                        Dedicated to continuous learning and development, I am eager to build upon my existing skills and knowledge.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">SKILLS</p>
+                        <p class="tab-links" onclick="opentab('experience')">EXPERIENCE</p>
+                        <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
+                    </div>
+                    <!--Skills tab-->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Coding:</span><br> Android Studio/Netbeans - Java, C#, JavaSript, html/html5, css/css3</li>
+                            <li><span>Database:</span><br>SQL, mySQL, SQLite, Backendless  </li>
+                            <li><span>Administration: </span><br>Microsoft - Word, Powerpoint, Excel, Project Management.etc</li>
+                            <li><span>Design & Prototype:</span><br>Adobe - Ai, XD, Canva</li>
+                        </ul>
+                    </div>
+                    <!--Experience tab-->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span> Jan 2023 - Current</span><br>IT intern at Botshabelo Digital Hub</li>
+                            <li><span>March 2022 - Aug 2022</span><br>Education/Admin Assistant (e-Cadre) at Dirisanang Primary School </li>
+                            <li><span>July 2021 - Feb 2022</span><br>Computer Networking Systems Intern at Andromeda Major/MICTSETA</li>
+                            <li><span>Feb 2017 - Nov 2017</span><br>Software Development Student Assistant at Central University of Technology</li>
+                        </ul>
+                    </div>
+                    <!--Education tab-->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>Microsoft Certified: Azure Data Fundementals from NEMISA</li>
+                            <li><span>2019</span><br> B.tech IT: Software Development from Central University of Technology</li>
+                            <li><span>2016</span><br>N.Dip IT: Software Development from Central University of Technology</li>
+                            
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--========** About End **========-->
+
+      <!-----------** Services **------------->
+    <div id="services">
+    <div class="container">
+        <h1 class="subtitle"> My <span> Services </span></h1>
+        <div class="services-list">
+
+            <!--------App Dev------->
+            <div>
+                <i class="fa-brands fa-android"></i>
+                <h2>App Development</h2>
+                <p>encoding <bold>Java and C#</bold> languages with the use of <br> Platforms such as <bold>Android studio 
+                , Visual Studio, mySQL, Backendless and Adobe XD </bold>,<br> I develop beautiful applications.
+                </p>
+                <a href="https://www.ibm.com/topics/mobile-application-development" target="_blank" >Learn more</a>
+            </div>
+            <!--------Web Design------->
+            <div>
+                <i class="fa-solid fa-code"></i> 
+                <h2>Web Developemnt</h2>
+                <p> encoding html/html5, css/css3 and javaScript using platforms such as <br> Wordpress and Visual studio Code 
+                    <br> I design beautiful websites and web applications.
+                </p>
+                <a href="https://www.theodinproject.com/lessons/foundations-introduction-to-web-development" target="_blank" >Learn more</a>
+            </div>
+            <!--------UI/UX Design------->
+            <div>
+                <i class="fa-solid fa-pen-nib"></i>
+                <h2>UI/UX Design</h2>
+                <p>with the use of Platforms such as Adobe Illustrator and Canva
+                    <br>I can design unique and breathtaking User Interfaces and Graphics
+                </p>
+                <a href="https://www.grm.digital/en/blog/ui-ux-design-basics" target="_blank" >Learn more</a>
+            </div>
+            
+        </div>
+    </div>
+    </div> 
+    <!--============** Services END **============-->
+
+    <!-----------** Portfolio **------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My <span> Work </span></h1>
+            <div class="work-list">
+
+                <!-----------LinkedIn Banner------------->
+                <div class="work">
+                    <img src="assets/LinkedInPic.jpg"  alt="">
+                    <div class="layer">
+                        <h3>LinkedIn Banner</h3>
+                        <p>Using Canva I created the Linked-In banner for my personal Linked In.  
+                            <br> Press the download button below to see what it looks like.</p>
+                            <a href="assets/TMLinkedBanner.png" target="_blank"  download><i class="fa-solid fa-download"></i></a>
+                    </div>
+                </div>
+                <!-----------Website Design------------->
+                <div class="work">
+                    <img src="assets/WebPic.jpg"  alt="">
+                    <div class="layer">
+                        <h3>Website Design</h3>
+                        <p>Using visual studio code, I encoded html5, css3 and JavaScript to design and develop <br> this stunning website you are currently surfing.  
+                            <br> Press the button below to download the website files.</p>
+                            <a href="assets/Portfolio.zip" target="_blank"  download><i class="fa-solid fa-download"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/DicePic.jpg"  alt="">
+                    <div class="layer">
+                        <h3>Dice Web Application</h3>
+                        <p>Here's another simple application for dice rolling that I developed using VsCode.  
+                            <br> Press the download button below to get the files.</p>
+                            <a href="assets/diceWebGame.zip" target="_blank"  download><i class="fa-solid fa-download"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="https://github.com/ThembaMatene" target="_blank"  class="btnDCV btn2" >See more</a>
+        </div>
+    </div>
+<!--============** Portfolio END **============-->
+
+
+    <!--------**Contact**------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact <span> Me </span></h1>
+                    <p><i class="fa-solid fa-envelope"></i>thembamatene@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> </i>067 8912 405</p>
+                    <div class="social-icons">
+                        <a href="https://za.linkedin.com/in/themba-matene-0b47901a2?trk=people-guest_people_search-card" target="_blank" ><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://fr-fr.facebook.com/themba.matene/" target="_blank" ><i class="fa-brands fa-facebook-f" ></i></a>
+                        <a href="https://github.com/ThembaMatene" target="_blank" ><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button class="btnDCV btnSubmit" type="submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; TM. Made in 2022 by Themba Matene</p>
+        </div>
+    </div>
+    <!--============** Contact END **============-->
+
+    <!-----------** Function/JavaScript **------------->
+    <script >
+
+       /*------Script for About Me-----*/
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    
+        /*------Script for Side Menu-----*/
+        var sidemenu = document.getElementById("sidemenu");
+
+        function showmenu(){
+            sidemenu.style.right = "0";
+        }
+        function hidemenu(){
+            sidemenu.style.right = "-150px";
+        }
+
+        /*------Script for Submit Contact Info -----*/
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyCdxpM3nB7VDwTFSzmPN9Sv2q2_ZvfPaMwIX-J0oreDpYHiXjZaPCY2ldKkJl1bGT94w/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Contact information submitted successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+
+    </script>
+    <!--============** Script END **============-->
+</body>
+</html>
